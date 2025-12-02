@@ -4,9 +4,10 @@
   box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: "Young Serif", serif, "Times New Roman", Georgia;
+html,
+body {
+  height: 100%;
+  font-family: "Young Serif", serif, "Times New Roman", Georgia;
 }
 
 :root {
@@ -25,7 +26,6 @@ body {
   margin: 0;
   line-height: 1.5;
   background-color: var(--Stone-100);
-
 
   display: flex;
   flex-direction: column;
@@ -59,15 +59,13 @@ main {
   gap: clamp(1rem, 1.5rem, 2rem);
 }
 
-
-
 .image img {
   width: 100%;
   max-width: 100%;
   height: auto;
   object-fit: cover;
   aspect-ratio: 16 / 9;
-  border-radius: min(1.5rem, 30px); 
+  border-radius: min(1.5rem, 30px);
   display: block;
 }
 
@@ -99,31 +97,30 @@ main {
   list-style-position: inside;
 }
 
-
 .ingredients {
-
 }
 
 .ingredients ul li {
   list-style-position: inside;
 }
 
-.instructions {
+.instructions ol{
+  padding-left: 1.3rem;
   
 }
 
-.instructions  ol li{
-  list-style-position:  outside;
-  padding-left: .25rem;
+.instructions ol li {
+  list-style-position: outside;
+  padding-left: 0.8rem;
   align-self: center;
 }
 
 .instructions ol li::marker {
   color: var(--Brown-800);
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   font-weight: 600;
+  padding-right: 0.5rem;
 }
-
 
 .nutrition {
   text-align: center;
@@ -134,7 +131,8 @@ main {
   border-collapse: collapse;
 }
 
-.nutrition table th, td {
+.nutrition table th,
+td {
   padding: 0.75rem;
   text-align: left;
   border-bottom: 1px solid var(--Brown-800);
@@ -146,7 +144,6 @@ main {
   font-style: "Outfit", sans-serif;
 }
 
-
 hr {
   border: none;
   width: 100%;
@@ -156,13 +153,11 @@ hr {
   margin: 0.5rem 0;
 }
 
-
 :focus-visible {
-  outline: 3px solid rgba(74,144,226,0.25);
+  outline: 3px solid rgba(74, 144, 226, 0.25);
   outline-offset: 3px;
   border-radius: 6px;
 }
-
 
 .attribution {
   font-size: 11px;
@@ -172,4 +167,3 @@ hr {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
